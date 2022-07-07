@@ -1,0 +1,25 @@
+{
+  "name": "ucc-logger-datavis",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.27.0",
+    "@influxdata/influxdb-client-browser": "^1.27.0",
+    "@visx/xychart": "^2.11.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-spring": "^9.4.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  }
+}
