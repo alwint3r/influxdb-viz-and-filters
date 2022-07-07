@@ -1,10 +1,9 @@
-import { XYChart, Tooltip, LineSeries, Axis, Grid } from "@visx/xychart";
 import {
   FluxTableMetaData,
   InfluxDB,
 } from "@influxdata/influxdb-client-browser";
-import { useEffect, useState } from "react";
-import { useVis, VisProvider } from "./contexts/vis.context";
+import { useState } from "react";
+import { VisProvider } from "./contexts/vis.context";
 import { ChartData } from "./contexts/vis.reducer";
 import DatePickers from "./components/date-pickers";
 import Charts from "./components/charts";
