@@ -46,7 +46,7 @@ export function visReducer(state: VisState, action: VisAction) {
         data: act.rows,
       };
 
-      const kf = new SimpleKalmanFilter(0, 1000, 0.5, 1.2);
+      const kf = new SimpleKalmanFilter(0, 1000, 0.1, 2.0);
       copied.charts["Temperature (KF)"] = {
         data: act.rows.map((row) => ({ ...row, y: kf.update(row.y) })),
         filter: kf,
